@@ -18,8 +18,8 @@
         @yield('styles')
 
         <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <script src="assets/js/html5shiv-3.6.2.min.js"></script>
+        <script src="assets/js/respond-1.2.0.min.js"></script>
         <![endif]-->
     </head>
 
@@ -39,8 +39,25 @@
         </script>
       	@yield('scripts')
 
+        <br>
         <footer>
-            <p>&copy; {{ date('Y') }} josahrens.me @yield('footer')</p>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-4">
+                    <p>&copy; {{ date('Y') }} josahrens.me</p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <a class="fa fa-2x fa-github" href="https://github.com/zarthus"></a>
+                        <a class="fa fa-2x fa-stack-overflow" href="http://stackoverflow.com/users/3100691/zarthus"></a>
+                        <a class="fa fa-2x fa-key" href="https://keybase.io/Zarthus"></a>
+                        <!--<a class="fa fa-2x fa-won" href="https://en.wikipedia.com/User:Zarthus"></a>-->
+                        <a class="fa fa-2x fa-google-plus-square" href="https://plus.google.com/u/0/102669236621990869558"></a>
+                        <a class="fa fa-2x fa-twitter" href="https://twitter.com/@Zarthus_"></a>
+                        <a class="fa fa-2x fa-facebook-square" href="https://facebook.com/JosAhrens"></a>
+                    </p>
+                </div>
+            </div>
+            @yield('footer')
         </footer>
     </body>
 </html>
