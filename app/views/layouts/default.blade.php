@@ -18,8 +18,8 @@
         @yield('styles')
 
         <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <script src="assets/js/html5shiv-3.6.2.min.js"></script>
+        <script src="assets/js/respond-1.2.0.min.js"></script>
         <![endif]-->
     </head>
 
