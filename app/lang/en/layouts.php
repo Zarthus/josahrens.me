@@ -5,6 +5,9 @@ return array(
     'meta_author' => 'Jos \'Zarthus\' Ahrens',
     'title_suffix' => 'josahrens.me',
 
+    /* navbar */
+    'navbar_about' => 'About',
+
     /* body */
 
     /* footer */
