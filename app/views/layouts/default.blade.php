@@ -10,11 +10,11 @@
 
         @yield('head')
 
-      	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+      	<link rel="shortcut icon" type="image/png" href="/favicon.png">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="assets/css/josahrens.me.css" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/josahrens.me.css">
         @yield('styles')
 
     </head>
@@ -34,17 +34,17 @@
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="./about">
+                            <a href="/about">
                                 <i class="fa fa-user"></i> </i>{{ trans('layouts.navbar_about') }}
                             </a>
                         </li>
                         <li>
-                            <a href="./cv">
+                            <a href="/cv">
                                 <i class="fa fa-star"></i> CV
                             </a>
                         </li>
                         <li>
-                            <a href="./contact">
+                            <a href="/contact">
                                 <i class="fa fa-phone"></i> Contact
                             </a>
                         </li>
@@ -74,8 +74,8 @@
         <br>
         <footer>
             <div class="container">
-                <div class="row">
                 <!--
+                <div class="row">
                     <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 text-center">
                         <h4>Navigation</h4>
                         <a href="#">Home</a><br>
@@ -142,8 +142,8 @@
             </div>
         </footer>
 
-        <script src="assets/js/jquery-2.1.1.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/jquery-2.1.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -156,8 +156,8 @@
         @yield('scripts')
 
         <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv-3.6.2.min.js"></script>
-        <script src="assets/js/respond-1.2.0.min.js"></script>
+        <script src="/assets/js/html5shiv-3.6.2.min.js"></script>
+        <script src="/assets/js/respond-1.2.0.min.js"></script>
         <![endif]-->
 
     </body>
