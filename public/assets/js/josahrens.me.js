@@ -1,12 +1,13 @@
-$(window).scroll(function() {
-    // Fade out the navbar if we pass 250px scrolled.
+$(document).ready(function() {
+    /* Reverse, and un-rot13 the email address */
+    var mail = 'rz.fareunfbw@rz';
+    mail = mail.split("").reverse().join("")
+        .replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 
-    var nav = $('.navbar-fixed-top');
-    var top = 250;
-
-    if ($(window).scrollTop() >= top) {
-        nav.fadeOut('medium');
-    } else {
-        nav.fadeIn('medium');
-    }
+    /* Set mail to actual email addr. */
+    var mailId = $('#js-display-email');
+    mailId.text(mail);
+    mailId.attr('href', 'mailto://' + mail);
+    mailId.removeAttr('id');
 });
+

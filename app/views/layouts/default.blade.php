@@ -15,27 +15,31 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/josahrens.me.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         @yield('styles')
 
     </head>
 
     <body>
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
+        <nav class="navbar navbar-custom" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="./">
-                        <i class="fa fa-home"></i> Home
-                    </a>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="navbar-brand" href="/">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="/about">
-                                <i class="fa fa-user"></i> </i>{{ trans('layouts.navbar_about') }}
+                                <i class="fa fa-user"></i></i> {{ trans('layouts.navbar_about') }}
                             </a>
                         </li>
                         <li>
@@ -53,7 +57,7 @@
             </div>
         </nav>
 
-        <header class="intro">
+        <header class="intro background-random-dots-purple">
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
@@ -77,6 +81,31 @@
         <footer>
             <hr>
             <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-2">
+                        <ul class="list-unstyled">
+                            <li><h4>Navigation</h4></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/cv">CV</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li><h4>Powered By</h4></li>
+                            <li><a href="http://laravel.com">Laravel</a></li>
+                            <li><a href="http://getbootstrap.com">Bootstrap</a></li>
+                            <li><a href="http://fontawesome.io/">Font Awesome</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul class="list-unstyled">
+                            <li><h4>Other</h4></li>
+                            <li><a href="https://github.com/zarthus/josahrens.me">This website on GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <ul class="list-inline text-center">
@@ -119,6 +148,10 @@
                             &copy; {{ date('Y') }} josahrens.me |
                             <a href="https://github.com/zarthus/josahrens.me">
                                 {{ trans('layouts.footer_view_website') }}
+                            </a> |
+                            Mail:
+                            <a href="#" id="js-display-email">
+                                Please enable JavaScript.
                             </a>
                         </p>
                     </div>
