@@ -22,38 +22,37 @@
 
     <body>
         <nav class="navbar navbar-custom" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a class="navbar-brand" href="/">
-                                <i class="fa fa-home"></i> Home
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="/">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/about">
-                                <i class="fa fa-user"></i></i> {{ trans('layouts.navbar_about') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/cv">
-                                <i class="fa fa-star"></i> CV
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/contact">
-                                <i class="fa fa-phone"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/about">
+                            <i class="fa fa-user"></i> {{ trans('layouts.navbar_about') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cv">
+                            <i class="fa fa-star"></i> CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <i class="fa fa-phone"></i> Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
