@@ -69,30 +69,14 @@
             </div>
         </header>
 
-        @yield('content')
+        <div class="content">
+            @yield('content')
 
-        <br>
+        </div>
+
         <footer>
+            <hr>
             <div class="container">
-                <!--
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 text-center">
-                        <h4>Navigation</h4>
-                        <a href="#">Home</a><br>
-                        <a href="#">CV</a><br>
-                        <a href="#">Contact</a><br>
-                        <a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a>
-                    </div>
-                    <div class="col-lg-4 col-md-5 text-center">
-                        <h4>Powered by</h4>
-                        <a href="http://laravel.com/">Laravel</a><br>
-                        <a href="http://getbootstrap.com">Bootstrap</a><br>
-                        <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a><br>
-                        ♥
-                    </div>
-                </div>
-                -->
-                <hr>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <ul class="list-inline text-center">
@@ -144,6 +128,7 @@
 
         <script src="/assets/js/jquery-2.1.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/josahrens.me.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
