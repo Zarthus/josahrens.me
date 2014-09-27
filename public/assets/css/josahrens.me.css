@@ -1,3 +1,42 @@
+/* default.blade.php */
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    text-indent: 10px;
+}
+
+nav.navbar.navbar-custom {
+    margin-bottom: 0;
+}
+
+header.intro div.container {
+    padding: 20px 0 0 0;
+}
+
+div.content div.container {
+    margin: 30px 0 0 0;
+}
+
+footer {
+    margin: 25px 0 25px 0;
+}
+
+.lead-big {
+    font-size: 23px;
+    margin-bottom: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.lead {
+    font-size: 17px;
+    margin-bottom: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -5,4 +44,22 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+}
+
+/* Random Gray Variations (http://transparanttextures.com/) backgrounds */
+.background-random-dots-purple {
+    background-color: #8690ad;
+    background-image: url(/assets/image/random-gray-variations.png);
+
+    color: white;
+}
+
+.background-tiled {
+    background-color: #c0c9d6;
+    background-image: url(/assets/image/tiled.png);
+}
+
+.background-asphalt {
+    background-color: #555;
+    background-image: url(/assets/image/asphalt.png);
 }
