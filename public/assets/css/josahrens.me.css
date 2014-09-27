@@ -7,8 +7,26 @@ body {
     text-indent: 10px;
 }
 
+.lead-big {
+    font-size: 23px;
+    margin-bottom: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.lead {
+    font-size: 17px;
+    margin-bottom: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
 nav.navbar.navbar-custom {
     margin-bottom: 0;
+}
+
+nav.navbar.navbar-custom div.container {
+    max-width: 768px;
 }
 
 header.intro div.container {
@@ -23,18 +41,9 @@ footer {
     margin: 25px 0 25px 0;
 }
 
-.lead-big {
-    font-size: 23px;
-    margin-bottom: 21px;
-    font-weight: 200;
-    line-height: 1.4;
-}
-
-.lead {
-    font-size: 17px;
-    margin-bottom: 21px;
-    font-weight: 200;
-    line-height: 1.4;
+footer div.container div.row ul,
+footer div.container.copyright {
+    padding-right: 100px;
 }
 
 hr {

@@ -22,37 +22,39 @@
 
     <body>
         <nav class="navbar navbar-custom" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="navbar-brand" href="/">
-                            <i class="fa fa-home"></i> Home
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="navbar-brand" href="/">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/about">
-                            <i class="fa fa-user"></i> {{ trans('layouts.navbar_about') }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/cv">
-                            <i class="fa fa-star"></i> CV
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            <i class="fa fa-phone"></i> Contact
-                        </a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/about">
+                                <i class="fa fa-user"></i> {{ trans('layouts.navbar_about') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cv">
+                                <i class="fa fa-star"></i> CV
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact">
+                                <i class="fa fa-phone"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -101,7 +103,8 @@
                     <div class="col-sm-3">
                         <ul class="list-unstyled">
                             <li><h4>Other</h4></li>
-                            <li><a href="https://github.com/zarthus/josahrens.me">This website on GitHub</a></li>
+                            <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
+                            <li>Mail: <a href="#" id="js-display-email">Please enable JavaScript.</a></li>
                         </ul>
                     </div>
                 </div>
@@ -144,14 +147,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <p class="copyright text-muted text-center">
-                            &copy; {{ date('Y') }} josahrens.me |
-                            <a href="https://github.com/zarthus/josahrens.me">
-                                {{ trans('layouts.footer_view_website') }}
-                            </a> |
-                            Mail:
-                            <a href="#" id="js-display-email">
-                                Please enable JavaScript.
-                            </a>
+                            &copy; {{ date('Y') }} josahrens.me
                         </p>
                     </div>
                 </div>
