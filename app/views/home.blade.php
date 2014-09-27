@@ -12,4 +12,3 @@
 @section('content')
 <h1 class="text-center">Some kind of content</h1>
 @stop
-

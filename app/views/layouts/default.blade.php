@@ -17,10 +17,6 @@
         <link rel="stylesheet" href="assets/css/josahrens.me.css" />
         @yield('styles')
 
-        <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv-3.6.2.min.js"></script>
-        <script src="assets/js/respond-1.2.0.min.js"></script>
-        <![endif]-->
     </head>
 
     <body>
@@ -30,7 +26,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="/">
+                    <a class="navbar-brand page-scroll" href="./">
                         <i class="fa fa-home"></i> Home
                     </a>
                 </div>
@@ -38,17 +34,17 @@
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/about">
+                            <a href="./about">
                                 <i class="fa fa-user"></i> </i>{{ trans('layouts.navbar_about') }}
                             </a>
                         </li>
                         <li>
-                            <a href="/cv">
+                            <a href="./cv">
                                 <i class="fa fa-star"></i> CV
                             </a>
                         </li>
                         <li>
-                            <a href="/contact">
+                            <a href="./contact">
                                 <i class="fa fa-phone"></i> Contact
                             </a>
                         </li>
@@ -79,6 +75,7 @@
         <footer>
             <div class="container">
                 <div class="row">
+                <!--
                     <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 text-center">
                         <h4>Navigation</h4>
                         <a href="#">Home</a><br>
@@ -94,6 +91,7 @@
                         ♥
                     </div>
                 </div>
+                -->
                 <hr>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -133,7 +131,12 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p class="copyright text-muted text-center">&copy; {{ date('Y') }} josahrens.me</p>
+                        <p class="copyright text-muted text-center">
+                            &copy; {{ date('Y') }} josahrens.me |
+                            <a href="https://github.com/zarthus/josahrens.me">
+                                {{ trans('layouts.footer_view_website') }}
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -151,6 +154,11 @@
             ga('send', 'pageview');
         </script>
         @yield('scripts')
+
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv-3.6.2.min.js"></script>
+        <script src="assets/js/respond-1.2.0.min.js"></script>
+        <![endif]-->
 
     </body>
 </html>
