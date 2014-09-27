@@ -24,10 +24,123 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="/">
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/about">
+                                <i class="fa fa-user"></i> </i>{{ trans('layouts.navbar_about') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/cv">
+                                <i class="fa fa-star"></i> CV
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact">
+                                <i class="fa fa-phone"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1 class="brand-heading">Jos Ahrens</h1>
+                            <p class="intro-text">
+                                @yield('header-text')
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         @yield('content')
 
-      	<script src="assets/js/jquery-2.1.1.min.js"></script>
-      	<script src="assets/js/bootstrap.min.js"></script>
+        <br>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 text-center">
+                        <h4>Navigation</h4>
+                        <a href="#">Home</a><br>
+                        <a href="#">CV</a><br>
+                        <a href="#">Contact</a><br>
+                        <a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a>
+                    </div>
+                    <div class="col-lg-4 col-md-5 text-center">
+                        <h4>Powered by</h4>
+                        <a href="http://laravel.com/">Laravel</a><br>
+                        <a href="http://getbootstrap.com">Bootstrap</a><br>
+                        <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a><br>
+                        ♥
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://github.com/zarthus" class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://stackoverflow.com/users/3100691/zarthus" class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://keybase.io/Zarthus" class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-key fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/u/0/102669236621990869558" class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://facebook.com/JosAhrens" class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p class="copyright text-muted text-center">&copy; {{ date('Y') }} josahrens.me</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery-2.1.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,27 +150,7 @@
             ga('create', 'UA-55146204-1', 'auto');
             ga('send', 'pageview');
         </script>
-      	@yield('scripts')
+        @yield('scripts')
 
-        <br>
-        <footer>
-            <div class="row">
-                <div class="col-md-offset-2 col-md-4">
-                    <p>&copy; {{ date('Y') }} josahrens.me</p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        <a class="fa fa-2x fa-github" href="https://github.com/zarthus"></a>
-                        <a class="fa fa-2x fa-stack-overflow" href="http://stackoverflow.com/users/3100691/zarthus"></a>
-                        <a class="fa fa-2x fa-key" href="https://keybase.io/Zarthus"></a>
-                        <!--<a class="fa fa-2x fa-won" href="https://en.wikipedia.com/User:Zarthus"></a>-->
-                        <a class="fa fa-2x fa-google-plus-square" href="https://plus.google.com/u/0/102669236621990869558"></a>
-                        <a class="fa fa-2x fa-twitter" href="https://twitter.com/@Zarthus_"></a>
-                        <a class="fa fa-2x fa-facebook-square" href="https://facebook.com/JosAhrens"></a>
-                    </p>
-                </div>
-            </div>
-            @yield('footer')
-        </footer>
     </body>
 </html>
