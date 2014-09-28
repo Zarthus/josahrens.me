@@ -2,6 +2,6 @@
 
 return array(
 
-    'header-text' => 'Persoonlijke website van Jos \'Zarthus\' Ahrens',
+    'header-text' => 'Welkom op mijn Persoonlijke Website',
 
 );

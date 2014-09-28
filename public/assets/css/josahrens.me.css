@@ -21,6 +21,11 @@ body {
     line-height: 1.4;
 }
 
+p {
+    font-size: 17px;
+}
+
+
 nav.navbar.navbar-custom {
     margin-bottom: 0;
 }
@@ -53,6 +58,16 @@ hr {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.30), rgba(0,0,0,0));
+}
+
+/* Index / home */
+.portfolio-block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.portfolio-block h2 {
+    text-transform: capitalize;
 }
 
 /* Random Gray Variations (http://transparanttextures.com/) backgrounds */
