@@ -39,13 +39,18 @@
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/about">
-                                <i class="fa fa-user"></i> {{ trans('layouts.navbar_about') }}
+                            <a href="/portfolio">
+                                <i class="fa fa-user"></i> Portfolio
                             </a>
                         </li>
                         <li>
-                            <a href="/cv">
-                                <i class="fa fa-star"></i> CV
+                            <a href="/resume">
+                                <i class="fa fa-star"></i> Résumé
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/timeline">
+                                <i class="fa fa-clock-o"></i> {{ trans('layouts.timeline') }}
                             </a>
                         </li>
                         <li>
@@ -58,16 +63,14 @@
             </div>
         </nav>
 
-        <header class="intro background-random-dots-purple">
+        <header class="intro">
             <div class="intro-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h1 class="brand-heading">Jos Ahrens</h1>
-                            <p class="intro-text">
-                                @yield('header-text')
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h1 class="brand-heading">@yield('header-head')</h1>
+                            @yield('header-body')
 
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +90,9 @@
                         <ul class="list-unstyled">
                             <li><h4>Navigation</h4></li>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/cv">CV</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li><a href="/resume">Résumé</a></li>
+                            <li><a href="/timeline">Timeline</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
@@ -104,6 +108,7 @@
                         <ul class="list-unstyled">
                             <li><h4>Other</h4></li>
                             <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
+                            <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
                             <li>Mail: <a href="#" id="js-display-email">Please enable JavaScript.</a></li>
                         </ul>
                     </div>

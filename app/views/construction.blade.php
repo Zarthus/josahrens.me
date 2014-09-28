@@ -5,8 +5,15 @@
 @section('title', 'Under Construction')
 @stop
 
-@section('header-text', trans('construction.header-text'))
+@section('header-head', 'Jos Ahrens')
 @stop
+
+@section('header-body')
+<p class="intro-text">
+    {{ trans('construction.header-text') }}
+</p>
+@stop
+
 
 @section('content')
 <h1 class="text-center">{{ trans('construction.under_construction_h1') }}</h1>

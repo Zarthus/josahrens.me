@@ -6,19 +6,63 @@
 @section('title', 'Home')
 @stop
 
-@section('header-text', trans('home.header-text'))
+@section('header-head', 'Home')
+@stop
+
+@section('header-body')
+<div class="header-image-box">
+    <img src="/assets/image/background.png">
+
+</div>
+<p class="intro-text">
+    {{ trans('home.header-text') }}
+</p>
 @stop
 
 @section('content')
 <div class="text-center">
-<h1 >Some kind of content</h1>
-<?php
-for ($i = 0; $i < 5; $i++) {
-    echo '<p class="lead-big">Lorem Ipsum dolar sir amit, dolar ser amit i know how to spell french. -french-
-            <br>breagging sinfiq atheme inwdaoq qapsl oqwo sak sqp qsop </p>';
-    echo '<p class="lead">Lorem Ipsum dolar sir amit, dolar ser amit i know how to spell french. -french-
-            <br>breagging sinfiq atheme inwdaoq qapsl oqwo sak sqp qsop </p>';
-}
-?>
+    <div class="row portfolio-block">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-6">
+            <h2>{{ trans('home.about_me_head') }}</h2>
+            <p>
+                {{ trans('home.about_me_body') }}
+            </p>
+        </div>
+    </div>
+
+    <div class="row portfolio-block">
+        <div class="col-md-offset-2 col-md-4">
+            <h2>{{ trans('home.timeline_head') }}</h2>
+            {{ trans('home.timeline_body') }}
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+    <div class="row portfolio-block">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-6">
+            <h2>{{ trans('layouts.placeholder_head') }}</h2>
+            <p>
+                {{ trans('layouts.placeholder_body') }}
+            </p>
+        </div>
+    </div>
+
+    <div class="row portfolio-block">
+        <div class="col-md-offset-2 col-md-4">
+            <h2>{{ trans('layouts.placeholder_head') }}</h2>
+            {{ trans('layouts.placeholder_body') }}
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
 </div>
 @stop
