@@ -109,7 +109,8 @@
                                 <li><h4>Other</h4></li>
                                 <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
                                 <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
-                                <li>Mail: <a href="#" id="js-display-email">Please enable JavaScript.</a></li>
+                                <li><a href="#">{{ trans('layouts.stackoverflow_jobs') }}</a></li>
+                                <li><a href="#" class="js-display-email">Please enable JavaScript.</a></li>
                             </ul>
                         </div>
                     </div>

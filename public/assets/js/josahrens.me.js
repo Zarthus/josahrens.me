@@ -5,9 +5,9 @@ $(document).ready(function() {
         .replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 
     /* Set mail to actual email addr. */
-    var mailId = $('#js-display-email');
+    var mailId = $('.js-display-email');
     mailId.text(mail);
     mailId.attr('href', 'mailto://' + mail);
-    mailId.removeAttr('id');
+    mailId.removeAttr('class');
 });
 

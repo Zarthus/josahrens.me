@@ -11,7 +11,7 @@
 
 @section('header-body')
 <div class="header-image-box">
-    <img src="/assets/image/background.png">
+    <img alt="Introductionary Background for the website" src="/assets/image/background.png">
 
 </div>
 <p class="intro-text">
@@ -26,45 +26,47 @@
 
         </div>
         <div class="col-md-6">
-            <h2>{{ trans('home.about_me_head') }}</h2>
+            <h2><a href="/portfolio">{{ trans('home.about_me_head') }}</a></h2>
             <p>
-                {{ trans('home.about_me_body') }}
+                {{ trans('home.about_me_body', array('age' => $age, 'year' => 'third')) }}
             </p>
         </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-            <h2>{{ trans('home.timeline_head') }}</h2>
+            <h2><a href="/resume">{{ trans('home.resume_head') }}</a></h2>
+            <p>
+                {{ trans('home.resume_body') }}
+            </p>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+
+    <div class="row portfolio-block">
+        <div class="col-md-offset-2 col-md-4">
+
+        </div>
+        <div class="col-md-6">
+            <h2><a href="/timeline">{{ trans('home.timeline_head') }}</a></h2>
             <p>
                 {{ trans('home.timeline_body') }}
             </p>
         </div>
-        <div class="col-md-6">
-
-        </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-
-        </div>
-        <div class="col-md-6">
-            <h2>{{ trans('layouts.placeholder_head') }}</h2>
+            <h2><a href="/contact">{{ trans('home.contact_head') }}</a></h2>
             <p>
-                {{ trans('layouts.placeholder_body') }}
+                {{ trans('home.contact_body') }}
             </p>
         </div>
-    </div>
-
-    <div class="row portfolio-block">
-        <div class="col-md-offset-2 col-md-4">
-            <h2>{{ trans('layouts.placeholder_head') }}</h2>
-            {{ trans('layouts.placeholder_body') }}
-        </div>
         <div class="col-md-6">
-
         </div>
     </div>
+
 </div>
 @stop

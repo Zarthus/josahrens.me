@@ -17,7 +17,14 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('home');
+		return View::make('home', array('age' => $this->getAge()));
 	}
 
+    public function getAge()
+    {
+        $birthdate = new DateTime('14-06-1995');
+        $today = new DateTime('today');
+
+        return $birthdate->diff($today)->y;
+    }
 }
