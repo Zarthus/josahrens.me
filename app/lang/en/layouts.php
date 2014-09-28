@@ -13,6 +13,7 @@ return array(
     /* footer */
     'footer_view_website' => 'This website on GitHub',
     'footer_view_github_resume' => 'My GitHub Résumé',
+    'stackoverflow_jobs' => 'StackOverflow Careers Profile',
 
     /* other */
     'placeholder_head' => 'Lorem ipsum dolor sit amet',
