@@ -21,8 +21,8 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-custom" role="navigation">
-            <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-custom" role="navigation">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
@@ -60,12 +60,12 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
-        <header class="intro">
-            <div class="intro-body">
-                <div class="container">
+        <div class="container">
+            <header class="intro">
+                <div class="intro-body">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center">
                             <h1 class="brand-heading">@yield('header-head')</h1>
@@ -74,90 +74,90 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <div class="content">
             @yield('content')
 
         </div>
 
-        <footer>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 col-sm-offset-2">
-                        <ul class="list-unstyled">
-                            <li><h4>Navigation</h4></li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/resume">Résumé</a></li>
-                            <li><a href="/timeline">Timeline</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
+        <div class="container">
+            <footer>
+                <hr>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-2">
+                            <ul class="list-unstyled">
+                                <li><h4>Navigation</h4></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/portfolio">Portfolio</a></li>
+                                <li><a href="/resume">Résumé</a></li>
+                                <li><a href="/timeline">Timeline</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li><h4>Powered By</h4></li>
+                                <li><a href="http://laravel.com">Laravel</a></li>
+                                <li><a href="http://getbootstrap.com">Bootstrap</a></li>
+                                <li><a href="http://fontawesome.io/">Font Awesome</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li><h4>Other</h4></li>
+                                <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
+                                <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
+                                <li>Mail: <a href="#" id="js-display-email">Please enable JavaScript.</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li><h4>Powered By</h4></li>
-                            <li><a href="http://laravel.com">Laravel</a></li>
-                            <li><a href="http://getbootstrap.com">Bootstrap</a></li>
-                            <li><a href="http://fontawesome.io/">Font Awesome</a></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="https://github.com/zarthus" class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://stackoverflow.com/users/3100691/zarthus" class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://keybase.io/Zarthus" class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-key fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/u/0/102669236621990869558" class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://facebook.com/JosAhrens" class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li><h4>Other</h4></li>
-                            <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
-                            <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
-                            <li>Mail: <a href="#" id="js-display-email">Please enable JavaScript.</a></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <p class="copyright text-muted text-center">
+                                &copy; {{ date('Y') }} josahrens.me
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <ul class="list-inline text-center">
-                            <li>
-                                <a href="https://github.com/zarthus" class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://stackoverflow.com/users/3100691/zarthus" class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://keybase.io/Zarthus" class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-key fa-stack-1x fa-inverse"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/u/0/102669236621990869558" class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/JosAhrens" class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p class="copyright text-muted text-center">
-                            &copy; {{ date('Y') }} josahrens.me
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
 
         <script src="/assets/js/jquery-2.1.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>

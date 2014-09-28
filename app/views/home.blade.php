@@ -20,9 +20,9 @@
 @stop
 
 @section('content')
-<div class="text-center">
+<div class="container">
     <div class="row portfolio-block">
-        <div class="col-md-4">
+        <div class="col-md-offset-2 col-md-4">
 
         </div>
         <div class="col-md-6">
@@ -44,7 +44,7 @@
     </div>
 
     <div class="row portfolio-block">
-        <div class="col-md-4">
+        <div class="col-md-offset-2 col-md-4">
 
         </div>
         <div class="col-md-6">
