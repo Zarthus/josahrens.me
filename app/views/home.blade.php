@@ -36,7 +36,9 @@
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
             <h2>{{ trans('home.timeline_head') }}</h2>
-            {{ trans('home.timeline_body') }}
+            <p>
+                {{ trans('home.timeline_body') }}
+            </p>
         </div>
         <div class="col-md-6">
 
