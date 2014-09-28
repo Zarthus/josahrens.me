@@ -2,9 +2,8 @@
 
 return array(
 
-    'header-text' => '',
+    'header-text' => 'This page is currently under construction.',
 
-    'under_construction_h1' => 'This page is still under contruction,',
-    'under_construction_h2' => 'please come back at a later time.',
+    'under_construction' => 'Please come back at a later time.',
 
 );
