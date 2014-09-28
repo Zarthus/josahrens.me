@@ -109,7 +109,7 @@
                                 <li><h4>Other</h4></li>
                                 <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
                                 <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
-                                <li><a href="#">{{ trans('layouts.stackoverflow_jobs') }}</a></li>
+                                <li><a href="http://careers.stackoverflow.com/zarthus">{{ trans('layouts.stackoverflow_jobs') }}</a></li>
                                 <li><a href="#" class="js-display-email">Please enable JavaScript.</a></li>
                             </ul>
                         </div>
@@ -136,7 +136,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://plus.google.com/u/0/102669236621990869558" class="fa-stack fa-lg">
+                                    <a href="https://plus.google.com/u/0/+JosAhrens-Zarthus/about" class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
                                     </a>
