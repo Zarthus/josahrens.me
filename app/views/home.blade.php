@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-
+            <img src="http://placehold.it/350x400" alt="placeholder">
         </div>
         <div class="col-md-6">
             <h2><a href="/portfolio">{{ trans('home.about_me_head') }}</a></h2>
