@@ -10,10 +10,6 @@
 @stop
 
 @section('header-body')
-<div class="header-image-box">
-    <img alt="Introductionary Background for the website" src="/assets/image/background.png">
-
-</div>
 <p class="intro-text">
     {{ trans('home.header-text') }}
 </p>

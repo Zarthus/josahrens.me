@@ -18,7 +18,7 @@ return array(
 
     'timeline_head' => 'My Timeline',
     'timeline_body' => 'This website has a timeline which will contains events that I think helped shape me up to be the person I want to be.<br><br>' .
-                       'The idea behind the timeline is to provide a lot of information about me, in just a few seconds.<br><br>' .
+                       'The idea behind the timeline is to provide a lot of information about me in just a few seconds, and the ability to navigate across my projects rapidly.<br><br>' .
                        'Intrigued? Why don\'t you visit <a href="/timeline">my timeline</a>.',
 
     'contact_head' => 'Contact Me',

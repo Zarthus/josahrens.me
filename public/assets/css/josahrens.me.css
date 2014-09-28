@@ -1,6 +1,8 @@
 /* default.blade.php */
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    background-color: #fafafa;
 }
 
 .container.row {
@@ -57,22 +59,4 @@ hr {
 
 .portfolio-block h2 {
     text-transform: capitalize;
-}
-
-/* Random Gray Variations (http://transparanttextures.com/) backgrounds */
-.background-random-dots-purple {
-    background-color: #8690ad;
-    background-image: url(/assets/image/random-gray-variations.png);
-
-    color: white;
-}
-
-.background-tiled {
-    background-color: #c0c9d6;
-    background-image: url(/assets/image/tiled.png);
-}
-
-.background-asphalt {
-    background-color: #555;
-    background-image: url(/assets/image/asphalt.png);
 }
