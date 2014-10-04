@@ -5,16 +5,19 @@
 @section('title', 'Under Construction')
 @stop
 
-@section('header-head', 'Under Construction..')
-@stop
-
-@section('header-body')
-<p class="intro-text">
-    {{ trans('construction.header-text') }}
-</p>
-@stop
-
-
-@section('content')
-<h3 class="text-center">{{ trans('construction.under_construction') }}</h3>
+@section('header')
+<div id="hero-background" class="hero-background-construction">
+            <div class="container">
+                <header class="intro">
+                    <div class="hero-unit">
+                        <h1>
+                            {{ trans('construction.header-text') }}
+                        </h1>
+                        <h3>
+                            {{ trans('construction.under_construction') }}
+                        </h3>
+                    </div>
+                </header>
+            </div>
+        </div>
 @stop

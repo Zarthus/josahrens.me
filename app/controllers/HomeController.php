@@ -15,10 +15,15 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function showIndex()
 	{
 		return View::make('home', array('age' => $this->getAge()));
 	}
+
+    public function showTimeline()
+    {
+        return View::make('timeline');
+    }
 
     public function getAge()
     {

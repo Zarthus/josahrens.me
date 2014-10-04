@@ -63,23 +63,12 @@
             </nav>
         </div>
 
-        <div class="container">
-            <header class="intro">
-                <div class="intro-body">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 text-center">
-                            <h1 class="brand-heading">@yield('header-head')</h1>
-                            @yield('header-body')
-
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
+        @yield('header')
 
         <div class="content">
-            @yield('content')
+            <span id="anchor-content"></span>
 
+            @yield('content')
         </div>
 
         <div class="container">
