@@ -53,10 +53,60 @@ hr {
 }
 
 /* Index / home */
+
+/* Hero Unit */
+#hero-background {
+    overflow: hidden;
+    background-size: cover;
+
+    height: 500px;
+    padding-top: 60px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-background-index {
+    text-shadow: -1px -1px 6px #000;
+    color: #e7e7e7;
+    background-image: url("/assets/image/index-wallpaper-blur-sm.jpg");
+}
+
+.hero-background-construction {
+    color: #000000;
+    background-image: url("/assets/image/construction-wallpaper-blur-sm.jpg");
+}
+
+#hero-button {
+    margin-top: 200px;
+
+    border: none;
+    background-color: #4684b2;
+}
+/* !Hero Unit */
+
 .portfolio-block {
-    margin: 25px 0 25px inherit;
+    margin: 25px 0 25px;
 }
 
 .portfolio-block h2 {
     text-transform: capitalize;
 }
+/* !Index / home */
+/* Timeline */
+#timeline {
+    margin-top: 50px;
+}
+
+span#time-line-start {
+    border-right: 2px solid #245269;
+    padding-top: 25px;
+}
+
+div.timeline-entry {
+    padding-left: 25px;
+}
+
+#timeline.timeline-dating {
+}
+
+/* !Timeline */

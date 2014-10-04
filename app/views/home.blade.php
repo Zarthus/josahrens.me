@@ -6,20 +6,35 @@
 @section('title', 'Home')
 @stop
 
-@section('header-head', 'Home')
-@stop
+@section('header')
+<div id="hero-background" class="hero-background-index">
+            <div class="container">
+                <header class="intro">
+                    <div class="hero-unit">
+                        <h1>
+                            {{ trans('home.header-text') }}
+                        </h1>
+                        <h3>
+                            {{ trans('home.header-text-sub') }}
+                        </h3>
 
-@section('header-body')
-<p class="intro-text">
-    {{ trans('home.header-text') }}
-</p>
+                        <div class="row">
+                            <div class="col-md-offset-4 col-md-4 text-center">
+                                <button id="hero-button" class="btn btn-primary btn-lg">Portfolio <i class="fa fa-arrow-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
 @stop
 
 @section('content')
 <div class="container">
+
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-
+            <img src="http://placehold.it/350x400" alt="placeholder">
         </div>
         <div class="col-md-6">
             <h2><a href="/portfolio">{{ trans('home.about_me_head') }}</a></h2>
@@ -37,13 +52,13 @@
             </p>
         </div>
         <div class="col-md-6">
-
+            <img src="http://placehold.it/500x200" alt="placeholder">
         </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-
+            <img src="http://placehold.it/350x250" alt="placeholder">
         </div>
         <div class="col-md-6">
             <h2><a href="/timeline">{{ trans('home.timeline_head') }}</a></h2>
@@ -61,6 +76,7 @@
             </p>
         </div>
         <div class="col-md-6">
+            <img src="http://placehold.it/400x250" alt="placeholder">
         </div>
     </div>
 
