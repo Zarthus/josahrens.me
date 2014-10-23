@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('description', 'Home page of josahrens.me, the personal website of Jos \'Zarthus\' Ahrens.')
+@section('description', 'The josahrens.me timeline, venture through the years.')
 @stop
 
 @section('title', 'Home')

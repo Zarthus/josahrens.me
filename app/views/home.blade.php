@@ -37,18 +37,18 @@
             <img src="http://placehold.it/350x400" alt="placeholder">
         </div>
         <div class="col-md-6">
-            <h2><a href="/portfolio">{{ trans('home.about_me_head') }}</a></h2>
+            <h2><a href="{{ $url_root }}/portfolio">{{ trans('home.about_me_head') }}</a></h2>
             <p>
-                {{ trans('home.about_me_body', array('age' => $age, 'year' => 'third')) }}
+                {{ trans('home.about_me_body', array('age' => $age, 'year' => 'third', 'urlroot' => $url_root)) }}
             </p>
         </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-            <h2><a href="/resume">{{ trans('home.resume_head') }}</a></h2>
+            <h2><a href="{{ $url_root }}/resume">{{ trans('home.resume_head') }}</a></h2>
             <p>
-                {{ trans('home.resume_body') }}
+                {{ trans('home.resume_body', array('urlroot' => $url_root)) }}
             </p>
         </div>
         <div class="col-md-6">
@@ -61,18 +61,18 @@
             <img src="http://placehold.it/350x250" alt="placeholder">
         </div>
         <div class="col-md-6">
-            <h2><a href="/timeline">{{ trans('home.timeline_head') }}</a></h2>
+            <h2><a href="{{ $url_root }}/timeline">{{ trans('home.timeline_head') }}</a></h2>
             <p>
-                {{ trans('home.timeline_body') }}
+                {{ trans('home.timeline_body', array('urlroot' => $url_root)) }}
             </p>
         </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-            <h2><a href="/contact">{{ trans('home.contact_head') }}</a></h2>
+            <h2><a href="{{ $url_root }}/contact">{{ trans('home.contact_head') }}</a></h2>
             <p>
-                {{ trans('home.contact_body') }}
+                {{ trans('home.contact_body', array('urlroot' => $url_root)) }}
             </p>
         </div>
         <div class="col-md-6">
