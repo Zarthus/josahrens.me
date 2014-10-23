@@ -60,7 +60,6 @@ class MainController extends BaseController {
         if (in_array($locale, $locales)) {
             if (Lang::getLocale() != $locales[$locale]) {
                 Lang::setLocale($locales[$locale]);
-                $this->active_language = $locales[$locale];
             }
         }
     }

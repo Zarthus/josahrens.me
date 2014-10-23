@@ -105,7 +105,7 @@
                                 <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
                                 <li><a href="http://careers.stackoverflow.com/zarthus">{{ trans('layouts.stackoverflow_jobs') }}</a></li>
                                 <li><a href="#" class="js-display-email">Please enable JavaScript.</a></li>
-                                <li><a href="{{ Lang::getLocale() == 'en' ? '/nl' : '/en' }}" title="Switch Languages">{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}</a></li>
+                                <li><a href="{{ Lang::getLocale() == 'en' ? '/nl' : '/en' }}">{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}</a></li>
                             </ul>
                         </div>
                     </div>
