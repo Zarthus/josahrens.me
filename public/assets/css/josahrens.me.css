@@ -110,3 +110,16 @@ div.timeline-entry {
 }
 
 /* !Timeline */
+/* Resume */
+#resume-header {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/* !Resume */
+
+/* General stuff */
+@media (max-width: 991px) {
+    .text-center-sm { /* Only center text if sm or less */
+        text-align: center;
+    }
+}

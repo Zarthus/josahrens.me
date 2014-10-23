@@ -71,7 +71,7 @@
             @yield('content')
         </div>
 
-        <div class="container">
+        <div class="container text-center-sm">
             <footer>
                 <hr>
                     <div class="row">
@@ -79,7 +79,6 @@
                             <ul class="list-unstyled">
                                 <li><h4>Navigation</h4></li>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
                                 <li><a href="/resume">Résumé</a></li>
                                 <li><a href="/timeline">Timeline</a></li>
                                 <li><a href="/contact">Contact</a></li>

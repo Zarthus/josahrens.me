@@ -25,6 +25,11 @@ class HomeController extends BaseController {
         return View::make('timeline');
     }
 
+    public function showResume()
+    {
+        return View::make('resume');
+    }
+
     public function getAge()
     {
         $birthdate = new DateTime('14-06-1995');
