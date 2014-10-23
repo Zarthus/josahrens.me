@@ -1,9 +1,9 @@
 <?php
 
-Route::get('/portfolio', 'ErrorController@showUnderConstruction');
-Route::get('/cv', 'ErrorController@showUnderConstruction');
-Route::get('/contact', 'ErrorController@showUnderConstruction');
+Route::get('{lang?}/portfolio', 'MainController@showUnderConstruction');
+Route::get('{lang?}/cv', 'MainController@showUnderConstruction');
+Route::get('{lang?}/contact', 'MainController@showUnderConstruction');
 
-Route::get('/timeline', 'HomeController@showTimeline');
-Route::get('/resume', 'HomeController@showResume');
-Route::get('/', 'HomeController@showIndex');
+Route::get('{lang?}/timeline', 'MainController@showTimeline');
+Route::get('{lang?}/resume', 'MainController@showResume');
+Route::get('{lang?}/', 'MainController@showIndex');

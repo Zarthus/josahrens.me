@@ -8,6 +8,7 @@ $(document).ready(function() {
     var mailId = $('.js-display-email');
     mailId.text(mail);
     mailId.attr('href', 'mailto://' + mail);
+    mailId.attr('title', 'Send me an email: ' + mail);
     mailId.removeAttr('class');
 
     $('#hero-button').click(function() {
