@@ -11,10 +11,10 @@ return array(
                        'I am studying to become a Software Engineer at the Alfa College in Groningen, where I am currently in my :year year.<br><br>' .
                        'In my spare time I write programs in various languages, where I\'ve taken a recent fonding towards C++ and Python.<br>' .
                        'Lastly, I am proficient with PHP, Java, and Python. Although I have experience writing many different languages.<br><br>' .
-                       'If this brief description of me has managed to spark your interest, I\'d like to invite you to read more about me on my <a href="/portfolio">Portfolio</a> page.',
+                       'If this brief description of me has managed to spark your interest, you can request my CV via the <a href="/contact">contact</a> page, or view my <a href="/resume">résumé</a>.',
 
     'resume_head' => 'Résumé',
-    'resume_body' => 'Not unlike my <a href="/portfolio">portfolio</a>, my résumé is here to give you a good understanding of who I am, and what I have done.<br><br>' .
+    'resume_body' => 'My résumé is here to give you a good understanding of who I am, and what I have done.<br><br>' .
                      'Go ahead and give it <a href="/resume">a visit</a>.',
 
     'timeline_head' => 'My Timeline',
