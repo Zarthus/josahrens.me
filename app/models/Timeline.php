@@ -81,7 +81,16 @@ class Timeline extends Eloquent implements UserInterface, RemindableInterface {
         {
             $tr_head = trans('timeline.' . $event['trans_name'] . '-head');
             $tr_body = trans('timeline.' . $event['trans_name'] . '-body');
-            $datestr = $event['date'] != '0000-00-00' ? '<p>' . $tr_date . ': ' . $event['date'] . '</p>' : '';
+
+            $datestr = '';
+
+            if ($event['date'] != '0000-00-00') {
+                if (substr($event['date'], 5) == '01-01') {
+                    $datestr = '<p>' . $tr_date . ': ' . substr($event['date'], 0, 4) . '</p>';
+                } else {
+                    $datestr = '<p>' . $tr_date . ': ' . $event['date'] . '</p>';
+                }
+            }
 
 
             $html .= <<<HTML
