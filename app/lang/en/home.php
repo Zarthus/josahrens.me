@@ -5,8 +5,6 @@ return array(
     'header-text' => 'Hi! I\'m Jos Ahrens,',
     'header-text-sub' => 'Welcome to my Personal Website',
 
-    'continue' => 'Continue',
-
     'about_me_head' => 'Hi, I\'m Jos',
     'about_me_body' => 'I\'m Jos Ahrens, also known as \'Zarthus\' on the internet. I am from The Netherlands and reside within the province Drenthe, ' .
                        'and I am :age years old.<br><br>' .
