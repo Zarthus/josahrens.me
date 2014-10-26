@@ -81,13 +81,6 @@ hr {
     background-image: url("/assets/image/construction-wallpaper-blur-sm.jpg");
 }
 
-#hero-button {
-    margin-top: 50px;
-
-    border: none;
-    background-color: #4684b2;
-}
-
 .hero-background-time #hero-button {
     margin-top: 150px;
 }

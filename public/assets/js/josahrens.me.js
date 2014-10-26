@@ -10,11 +10,4 @@ $(document).ready(function() {
     mailId.attr('href', 'mailto://' + mail);
     mailId.attr('title', 'Send me an email: ' + mail);
     mailId.removeAttr('class');
-
-    $('#hero-button').click(function() {
-        var anchorHeight = $('#anchor-content').offset()['top'];
-
-        $('body').animate({scrollTop: anchorHeight}, 700);
-    });
-
 });
