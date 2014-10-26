@@ -36,6 +36,13 @@ class MainController extends BaseController {
         return View::make('resume', array('url_root' => $this->getURLRoot()));
     }
 
+    public function showContact($locale = 'en')
+    {
+        $this->configureLocale($locale);
+
+        return View::make('contact', array('url_root' => $this->getURLRoot()));
+    }
+
     public function showUnderConstruction($locale = 'en')
     {
         $this->configureLocale($locale);

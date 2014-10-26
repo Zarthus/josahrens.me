@@ -39,11 +39,6 @@
                 <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="{{ $url_root }}/portfolio">
-                                <i class="fa fa-user"></i> Portfolio
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ $url_root }}/resume">
                                 <i class="fa fa-star"></i> Résumé
                             </a>
