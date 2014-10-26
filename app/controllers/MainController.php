@@ -26,7 +26,10 @@ class MainController extends BaseController {
     {
         $this->configureLocale($locale);
 
-        return View::make('timeline', array('url_root' => $this->getURLRoot()));
+        $tl = new Timeline();
+        $timeline_html = $tl->getEventsAsHTML();
+
+        return View::make('timeline', array('url_root' => $this->getURLRoot(), 'timeline_html' => $timeline_html));
     }
 
     public function showResume($locale = 'en')
