@@ -6,7 +6,7 @@ return array(
     'header-text-sub' => 'Welcome to my Personal Website',
 
     'about_me_head' => 'Hi, I\'m Jos',
-    'about_me_body' => 'I\'m Jos Ahrens, also known as \'Zarthus\' on the internet. I am from The Netherlands and reside within the province Drenthe, ' .
+    'about_me_body' => 'I\'m Jos Ahrens, also known as \'Zarthus\' on the internet. I am from The Netherlands and reside within the province of Drenthe, ' .
                        'and I am :age years old.<br><br>' .
                        'I am studying to become a Software Engineer at the Alfa College in Groningen, where I am currently in my :year year.<br><br>' .
                        'In my spare time I write programs in various languages, where I\'ve taken a recent fondness towards C++ and Python.<br>' .
@@ -19,7 +19,7 @@ return array(
 
     'timeline_head' => 'My Timeline',
     'timeline_body' => 'This website has a timeline which will contains events that I think helped shape me up to be the person I want to be.<br><br>' .
-                       'The idea behind the timeline is to provide a lot of information about me in just a few seconds, and the ability to navigate across my projects rapidly.<br><br>' .
+                       'The idea behind the timeline is to provide a lot of background information about me in just a few seconds.<br><br>' .
                        'Intrigued? Why don\'t you visit <a href=":urlroot/timeline">my timeline</a>.',
 
     'contact_head' => 'Contact Me',

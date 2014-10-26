@@ -10,7 +10,7 @@ return array(
     'start-prog-head' => 'Begin Programmeren',
     'start-prog-body' => 'We moeten overal ergens beginnen, Ik ben met Web Development (HTML, CSS, JS, PHP), PAWN (een C-like taal), en mSL (mIRC scripting language).',
 
-    'started-using-irc-head' => 'Begin gebruik IRC',
+    'started-using-irc-head' => 'Begin met het gebruik van IRC',
     'started-using-irc-body' => 'Het ziet er misschien niet zo belangrijk uit, maar de mensen die ik op het internet heb ontmoet hebben ervoor gezorgd dat ik ben wie ik ben. ' .
                                 'Ik heb veel vrienden gemaakt, en over het algemeen een goede tijd. Over de jaren heb ik veel geleerd van IRC',
 
@@ -25,7 +25,7 @@ return array(
                                     'vaardigheden dat me nog steeds helpen als programmeur.<br><br>Ik had echter niet veel plezier in het zijn van een Onderwijs Assistent, want ik wou meer doen met programmeren. ' .
                                     'Ik ben gestopt in het midden van het tweede jaar, en ben toen naar het Alfa College in Groningen gegaan om Applicatie Ontwikkelaar te studeren.',
 
-    'pickup-languages-head' => 'Leerde meer programmeertalen',
+    'pickup-languages-head' => 'Leren van meer programmeertalen',
     'pickup-languages-body' => 'Over de jaren heb heb ik verschillende programmeer talen opgepakt, Een accurate lijst staat op mijn <a href=":urlroot/resume">résumé</a>.',
 
     'school-appdev-head' => 'Applicatie Ontwikkelaar',
