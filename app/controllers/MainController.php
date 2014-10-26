@@ -34,7 +34,7 @@ class MainController extends BaseController {
         $this->configureLocale($locale);
 
         $tl = new Timeline();
-        $events = $tl->getEvents();
+        $events = $tl->getEventsForTimeline($this->getURLRoot());
 
         return View::make('timeline', array('events' => $events));
     }
