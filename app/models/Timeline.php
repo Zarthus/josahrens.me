@@ -65,6 +65,34 @@ class Timeline extends Eloquent implements UserInterface, RemindableInterface {
         return Timeline::all();
     }
 
+    public function getEventsForTimeline($url_root = '/en')
+    {
+        $events = $this->getEvents();
+        $timelineEvents = array();
+
+        $tr_date = trans('timeline.date');
+
+        foreach ($events as $event) {
+            $tmp = [];
+
+            $tmp['head'] = trans('timeline.' . $event['trans_name'] . '-head', array('urlroot' => $url_root));
+            $tmp['body'] = trans('timeline.' . $event['trans_name'] . '-body', array('urlroot' => $url_root));
+            $tmp['date'] = '';
+
+            if ($event['date'] != '0000-00-00') {
+                if (substr($event['date'], 5) == '01-01') {
+                    $tmp['date'] = '<p>' . $tr_date . ': ' . substr($event['date'], 0, 4) . '</p>';
+                } else {
+                    $tmp['date'] = '<p>' . $tr_date . ': ' . $event['date'] . '</p>';
+                }
+            }
+
+            $timelineEvents[] = $tmp;
+        }
+
+        return $timelineEvents;
+    }
+
     /**
      * Add an event to the database
      *

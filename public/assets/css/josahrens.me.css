@@ -101,6 +101,11 @@ hr {
 .portfolio-block h2 {
     text-transform: capitalize;
 }
+
+.index-image {
+    width: 100%;
+}
+
 /* !Index / home */
 /* Resume */
 #resume-header {
