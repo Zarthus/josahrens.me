@@ -1,0 +1,14 @@
+root = true
+
+# All files
+[*]
+end_of_line = LF
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# All PHP files.
+[*.php]
+indent_style = space
+indent_size = 4
+
+charset = utf-8
