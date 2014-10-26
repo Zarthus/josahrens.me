@@ -7,9 +7,9 @@ return array(
 
     'about_me_head' => 'Hi, I\'m Jos',
     'about_me_body' => 'I\'m Jos Ahrens, also known as \'Zarthus\' on the internet. I am from The Netherlands and reside within the province Drenthe, ' .
-                       'and am :age years old.<br><br>' .
+                       'and I am :age years old.<br><br>' .
                        'I am studying to become a Software Engineer at the Alfa College in Groningen, where I am currently in my :year year.<br><br>' .
-                       'In my spare time I write programs in various languages, where I\'ve taken a recent fonding towards C++ and Python.<br>' .
+                       'In my spare time I write programs in various languages, where I\'ve taken a recent funding towards C++ and Python.<br>' .
                        'Lastly, I am proficient with PHP, Java, and Python. Although I have experience writing many different languages.<br><br>' .
                        'If this brief description of me has managed to spark your interest, you can request my CV via the <a href=":urlroot/contact">contact</a> page, or view my <a href=":urlroot/resume">résumé</a>.',
 

@@ -15,11 +15,18 @@ class MainController extends BaseController {
 	|
 	*/
 
+    public function __construct()
+    {
+        $pgname = str_replace('{lang?}/', '', Route::current()->uri());
+
+        View::share('pgname', $pgname);
+    }
+
 	public function showIndex($locale = 'en')
 	{
         $this->configureLocale($locale);
 
-		return View::make('home', array('age' => $this->getAge(), 'url_root' => $this->getURLRoot()));
+		return View::make('home', array('age' => $this->getAge()));
 	}
 
     public function showTimeline($locale = 'en')
@@ -27,30 +34,30 @@ class MainController extends BaseController {
         $this->configureLocale($locale);
 
         $tl = new Timeline();
-        $timeline_html = $tl->getEventsAsHTML();
+        $events = $tl->getEvents();
 
-        return View::make('timeline', array('url_root' => $this->getURLRoot(), 'timeline_html' => $timeline_html));
+        return View::make('timeline', array('events' => $events));
     }
 
     public function showResume($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('resume', array('url_root' => $this->getURLRoot()));
+        return View::make('resume');
     }
 
     public function showContact($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('contact', array('url_root' => $this->getURLRoot()));
+        return View::make('contact');
     }
 
     public function showUnderConstruction($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('construction', array('url_root' => $this->getURLRoot()));
+        return View::make('construction');
     }
 
     private function getAge()
@@ -72,6 +79,8 @@ class MainController extends BaseController {
                 Lang::setLocale($locales[$locale]);
             }
         }
+
+        View::share('url_root', $this->getURLRoot());
     }
 
     private function getURLRoot()
