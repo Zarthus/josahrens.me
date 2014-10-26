@@ -12,7 +12,7 @@ return array(
     'links_contrib' => 'Bijgedraagt aan',
     'links_feedback' => 'Nauw samengewerkt met de ontwikkelaars van',
 
-    'languages_head_spoken' => 'Talen',
+    'languages_head_spoken' => 'Gesproken Talen',
     'languages_head_program' => 'Programmeertalen',
     'languages_head_libs' => 'Libraries, Frameworks',
     'languages_head_likes' => 'Geniet om te werken met',
