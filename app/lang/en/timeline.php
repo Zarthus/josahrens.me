@@ -4,17 +4,15 @@ return array(
 
     'header-text' => 'The Timeline',
 
-    'begin_journey' => 'Travel Through Time',
-
     'born-head' => 'Birth!',
     'born-body' => 'I couldn\'t quite do anything at this age yet, but when I look back I do think being born is one of the most vital aspects of my life.',
 
-    'started-using-irc-head' => 'Started using IRC',
-    'started-using-irc-body' => 'It may not seem very important, but the people I\'ve met on the internet helped me shape myself. I\'ve made a ton of friends, and just generally have a good time. Over the years, ' .
-                                'I\'ve learnt a lot of things from IRC.',
-
     'start-prog-head' => 'I started programming',
     'start-prog-body' => 'We all had to start somewhere, I started with Web Development (HTML, CSS, JS, PHP), PAWN (a language similar to C) and mSL (mIRC scripting language)',
+
+    'started-using-irc-head' => 'Started using IRC',
+    'started-using-irc-body' => 'It may not seem very important, but the people I\'ve met on the internet helped me shape myself. I\'ve made a ton of friends, and just generally have a good time. Over the years, ' .
+        'I\'ve learnt a lot of things from IRC.',
 
     'school-construction-head' => 'Graduate Middle School',
     'school-construction-body' => 'I graduated from Middle School with a diploma in Construction (Kader Bouw). Moving onto MBO 4',

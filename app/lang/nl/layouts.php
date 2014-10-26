@@ -26,4 +26,7 @@ return array(
     'lang_ext_en' => 'This site in English',
     'lang_ext_nl' => 'This site in Dutch',
 
+    'footer-navigation' => 'Navigatie',
+    'footer-powered' => 'Powered By',
+    'footer-other' => 'Overige',
 );
