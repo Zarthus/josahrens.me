@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/josahrens.me.css">
+        <link rel="stylesheet" href="/assets/css/josahrens.me.min.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         @yield('styles')
 
@@ -152,7 +152,7 @@
 
         <script src="/assets/js/jquery-2.1.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/josahrens.me.js"></script>
+        <script src="/assets/js/josahrens.me.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
