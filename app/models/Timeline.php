@@ -68,9 +68,11 @@ class Timeline extends Eloquent implements UserInterface, RemindableInterface {
     /**
      * Get html string of all events
      *
+     * @param $url_root string language we're currently on
+     *
      * @returns string
      */
-    public function getEventsAsHTML()
+    public function getEventsAsHTML($url_root = '/en')
     {
         $events = $this->getEvents();
         $html = '';
@@ -79,8 +81,8 @@ class Timeline extends Eloquent implements UserInterface, RemindableInterface {
 
         foreach ($events as $event)
         {
-            $tr_head = trans('timeline.' . $event['trans_name'] . '-head');
-            $tr_body = trans('timeline.' . $event['trans_name'] . '-body');
+            $tr_head = trans('timeline.' . $event['trans_name'] . '-head', array('urlroot' => $url_root));
+            $tr_body = trans('timeline.' . $event['trans_name'] . '-body', array('urlroot' => $url_root));
 
             $datestr = '';
 

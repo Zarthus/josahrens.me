@@ -15,11 +15,12 @@ class MainController extends BaseController {
 	|
 	*/
 
+    // TODO - pgname => '' is inefficient, look into ways of getting the route path.
 	public function showIndex($locale = 'en')
 	{
         $this->configureLocale($locale);
 
-		return View::make('home', array('age' => $this->getAge(), 'url_root' => $this->getURLRoot()));
+		return View::make('home', array('age' => $this->getAge(), 'url_root' => $this->getURLRoot(), 'pgname' => ''));
 	}
 
     public function showTimeline($locale = 'en')
@@ -27,30 +28,30 @@ class MainController extends BaseController {
         $this->configureLocale($locale);
 
         $tl = new Timeline();
-        $timeline_html = $tl->getEventsAsHTML();
+        $timeline_html = $tl->getEventsAsHTML($this->getURLRoot());
 
-        return View::make('timeline', array('url_root' => $this->getURLRoot(), 'timeline_html' => $timeline_html));
+        return View::make('timeline', array('url_root' => $this->getURLRoot(), 'timeline_html' => $timeline_html, 'pgname' => 'timeline'));
     }
 
     public function showResume($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('resume', array('url_root' => $this->getURLRoot()));
+        return View::make('resume', array('url_root' => $this->getURLRoot(), 'pgname' => 'resume'));
     }
 
     public function showContact($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('contact', array('url_root' => $this->getURLRoot()));
+        return View::make('contact', array('url_root' => $this->getURLRoot(), 'pgname' => 'contact'));
     }
 
     public function showUnderConstruction($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('construction', array('url_root' => $this->getURLRoot()));
+        return View::make('construction', array('url_root' => $this->getURLRoot(), 'pgname' => 'resume'));
     }
 
     private function getAge()
