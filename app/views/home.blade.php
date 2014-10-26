@@ -33,7 +33,7 @@
         <div class="col-md-6">
             <h2>{{ trans('home.about_me_head') }}</h2>
             <p>
-                {{ trans('home.about_me_body', array('age' => $age, 'year' => 'third', 'urlroot' => $url_root)) }}
+                {{ trans('home.about_me_body', array('age' => $age, 'year' => (Lang::getLocale() == 'en' ? 'third' : 'derde'), 'urlroot' => $url_root)) }}
             </p>
         </div>
     </div>
