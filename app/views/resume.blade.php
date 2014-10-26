@@ -107,7 +107,7 @@
         <div class="col-md-5">
             <?php
                 $languages = array('HTML', 'CSS', 'PHP', 'SQL', 'JavaScript', 'Java', 'Bash', 'Regular Expressions',
-                                   'Python', 'C', 'C++', 'C#', 'Visual Basic', 'Android', 'Perl'); // in order of learning sorted to alphabetically.
+                                   'Python', 'C', 'C++', 'C#', 'Visual Basic', 'Perl'); // in order of learning sorted to alphabetically.
                 sort($languages);
                 echo implode(', ', $languages);
             ?>
@@ -121,7 +121,7 @@
         </div>
         <div class="col-md-5">
             <?php
-                $worked_libs = array('Bootstrap', 'JQuery', 'Code Igniter', 'AngularJS', 'Laravel');
+                $worked_libs = array('Bootstrap', 'JQuery', 'Code Igniter', 'AngularJS', 'Laravel', 'Android');
                 sort($worked_libs);
                 echo implode(', ', $worked_libs);
             ?>
@@ -234,6 +234,5 @@
         </div>
     </div>
     <!-- ! Work Experience -->
-
 </div>
 @stop

@@ -15,12 +15,18 @@ class MainController extends BaseController {
 	|
 	*/
 
-    // TODO - pgname => '' is inefficient, look into ways of getting the route path.
+    public function __construct()
+    {
+        $pgname = str_replace('{lang?}/', '', Route::current()->uri());
+
+        View::share('pgname', $pgname);
+    }
+
 	public function showIndex($locale = 'en')
 	{
         $this->configureLocale($locale);
 
-		return View::make('home', array('age' => $this->getAge(), 'url_root' => $this->getURLRoot(), 'pgname' => ''));
+		return View::make('home', array('age' => $this->getAge()));
 	}
 
     public function showTimeline($locale = 'en')
@@ -28,30 +34,30 @@ class MainController extends BaseController {
         $this->configureLocale($locale);
 
         $tl = new Timeline();
-        $timeline_html = $tl->getEventsAsHTML($this->getURLRoot());
+        $events = $tl->getEvents();
 
-        return View::make('timeline', array('url_root' => $this->getURLRoot(), 'timeline_html' => $timeline_html, 'pgname' => 'timeline'));
+        return View::make('timeline', array('events' => $events));
     }
 
     public function showResume($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('resume', array('url_root' => $this->getURLRoot(), 'pgname' => 'resume'));
+        return View::make('resume');
     }
 
     public function showContact($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('contact', array('url_root' => $this->getURLRoot(), 'pgname' => 'contact'));
+        return View::make('contact');
     }
 
     public function showUnderConstruction($locale = 'en')
     {
         $this->configureLocale($locale);
 
-        return View::make('construction', array('url_root' => $this->getURLRoot(), 'pgname' => 'resume'));
+        return View::make('construction');
     }
 
     private function getAge()
@@ -73,6 +79,8 @@ class MainController extends BaseController {
                 Lang::setLocale($locales[$locale]);
             }
         }
+
+        View::share('url_root', $this->getURLRoot());
     }
 
     private function getURLRoot()

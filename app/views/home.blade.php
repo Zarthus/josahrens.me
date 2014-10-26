@@ -34,10 +34,10 @@
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-            <img src="http://placehold.it/350x400" alt="placeholder">
+            <img src="/assets/image/picture_self.jpg" width='350' height='400' alt="placeholder">
         </div>
         <div class="col-md-6">
-            <h2><a href="{{ $url_root }}/portfolio">{{ trans('home.about_me_head') }}</a></h2>
+            <h2>{{ trans('home.about_me_head') }}</h2>
             <p>
                 {{ trans('home.about_me_body', array('age' => $age, 'year' => 'third', 'urlroot' => $url_root)) }}
             </p>
@@ -52,13 +52,13 @@
             </p>
         </div>
         <div class="col-md-6">
-            <img src="http://placehold.it/500x200" alt="placeholder">
+            <img src="/assets/image/resume.jpg" alt="placeholder">
         </div>
     </div>
 
     <div class="row portfolio-block">
         <div class="col-md-offset-2 col-md-4">
-            <img src="http://placehold.it/350x250" alt="placeholder">
+            <img src="/assets/image/timeline.jpg" alt="placeholder">
         </div>
         <div class="col-md-6">
             <h2><a href="{{ $url_root }}/timeline">{{ trans('home.timeline_head') }}</a></h2>
@@ -74,9 +74,6 @@
             <p>
                 {{ trans('home.contact_body', array('urlroot' => $url_root)) }}
             </p>
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/400x250" alt="placeholder">
         </div>
     </div>
 

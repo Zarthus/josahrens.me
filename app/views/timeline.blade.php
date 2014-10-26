@@ -32,6 +32,37 @@
         </div>
     </div>
 
-    {{ $timeline_html }}
+
+    <?php $tr_date = trans('timeline.date'); ?>
+    @foreach($events as $event)
+        <?php
+        $tr_head = trans('timeline.' . $event['trans_name'] . '-head', array('urlroot' => $url_root));
+        $tr_body = trans('timeline.' . $event['trans_name'] . '-body', array('urlroot' => $url_root));
+
+        $datestr = '';
+
+        if ($event['date'] != '0000-00-00') {
+            if (substr($event['date'], 5) == '01-01') {
+                $datestr = '<p>' . $tr_date . ': ' . substr($event['date'], 0, 4) . '</p>';
+            } else {
+                $datestr = '<p>' . $tr_date . ': ' . $event['date'] . '</p>';
+            }
+        }
+
+        ?>
+
+        <!-- Timeline ID: {{ $event['id'] }} -->
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-6">
+                <h2>{{ $tr_head }}</h2>
+                {{ $datestr }}
+
+                <p>
+                    {{ $tr_body }}
+                </p>
+            </div>
+        </div>
+        <br>
+    @endforeach
 </div>
 @stop

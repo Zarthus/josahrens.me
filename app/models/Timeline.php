@@ -66,58 +66,6 @@ class Timeline extends Eloquent implements UserInterface, RemindableInterface {
     }
 
     /**
-     * Get html string of all events
-     *
-     * @param $url_root string language we're currently on
-     *
-     * @returns string
-     */
-    public function getEventsAsHTML($url_root = '/en')
-    {
-        $events = $this->getEvents();
-        $html = '';
-
-        $tr_date = trans('timeline.date');
-
-        foreach ($events as $event)
-        {
-            $tr_head = trans('timeline.' . $event['trans_name'] . '-head', array('urlroot' => $url_root));
-            $tr_body = trans('timeline.' . $event['trans_name'] . '-body', array('urlroot' => $url_root));
-
-            $datestr = '';
-
-            if ($event['date'] != '0000-00-00') {
-                if (substr($event['date'], 5) == '01-01') {
-                    $datestr = '<p>' . $tr_date . ': ' . substr($event['date'], 0, 4) . '</p>';
-                } else {
-                    $datestr = '<p>' . $tr_date . ': ' . $event['date'] . '</p>';
-                }
-            }
-
-
-            $html .= <<<HTML
-        <!-- Timeline ID: {$event['id']} -->
-        <div class="row">
-            <div class="col-sm-offset-3 col-sm-6">
-                <h2>{$tr_head}</h2>
-                {$datestr}
-
-                <p>
-                    {$tr_body}
-                </p>
-            </div>
-        </div>
-        <br>
-
-
-HTML;
-
-        }
-
-        return $html;
-    }
-
-    /**
      * Add an event to the database
      *
      * @param $tr_name string translation name in /app/lang/../timeline.php minus -head/body
