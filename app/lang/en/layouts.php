@@ -26,4 +26,7 @@ return array(
     'lang_ext_en' => 'Deze site in het Engels',
     'lang_ext_nl' => 'Deze site in het Nederlands',
 
+    'footer-navigation' => 'Navigation',
+    'footer-powered' => 'Powered By',
+    'footer-other' => 'Other',
 );

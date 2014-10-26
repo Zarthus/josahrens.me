@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ Lang::getLocale() == 'en' ? '/nl/' . $pgname : '/en/' . $pgname }}" title="{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}">
+                            <a href="{{ Lang::getLocale() == 'en' ? '/nl' . $pgname : '/en' . $pgname }}" title="{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}">
                                 <i class="fa fa-flag"></i> {{ Lang::getLocale() == 'en' ? trans('layouts.lang_nl') : trans('layouts.lang_en') }}
                             </a>
 
@@ -78,16 +78,16 @@
                     <div class="row">
                         <div class="col-sm-3 col-sm-offset-2">
                             <ul class="list-unstyled">
-                                <li><h4>Navigation</h4></li>
+                                <li><h4>{{ trans('layouts.footer-navigation') }}</h4></li>
                                 <li><a href="{{ $url_root }}/">Home</a></li>
                                 <li><a href="{{ $url_root }}/resume">Résumé</a></li>
-                                <li><a href="{{ $url_root }}/timeline">Timeline</a></li>
+                                <li><a href="{{ $url_root }}/timeline">{{ trans('layouts.timeline') }}</a></li>
                                 <li><a href="{{ $url_root }}/contact">Contact</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-3">
                             <ul class="list-unstyled">
-                                <li><h4>Powered By</h4></li>
+                                <li><h4>{{ trans('layouts.footer-powered') }}</h4></li>
                                 <li><a href="http://laravel.com">Laravel</a></li>
                                 <li><a href="http://getbootstrap.com">Bootstrap</a></li>
                                 <li><a href="http://fontawesome.io/">Font Awesome</a></li>
@@ -95,12 +95,12 @@
                         </div>
                         <div class="col-sm-3">
                             <ul class="list-unstyled">
-                                <li><h4>Other</h4></li>
+                                <li><h4>{{ trans('layouts.footer-other') }}</h4></li>
                                 <li><a href="https://github.com/zarthus/josahrens.me">{{ trans('layouts.footer_view_website') }}</a></li>
                                 <li><a href="https://resume.github.com/?Zarthus">{{ trans('layouts.footer_view_github_resume') }}</a></li>
                                 <li><a href="http://careers.stackoverflow.com/zarthus">{{ trans('layouts.stackoverflow_jobs') }}</a></li>
                                 <li><a href="#" class="js-display-email">Please enable JavaScript.</a></li>
-                                <li><a href="{{ Lang::getLocale() == 'en' ? '/nl/' . $pgname : '/en/' . $pgname }}">{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}</a></li>
+                                <li><a href="{{ Lang::getLocale() == 'en' ? '/nl' . $pgname : '/en' . $pgname }}">{{ Lang::getLocale() == 'en' ? trans('layouts.lang_ext_nl') : trans('layouts.lang_ext_en') }}</a></li>
                             </ul>
                         </div>
                     </div>

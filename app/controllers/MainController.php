@@ -17,7 +17,7 @@ class MainController extends BaseController {
 
     public function __construct()
     {
-        $pgname = str_replace('{lang?}/', '', Route::current()->uri());
+        $pgname = str_replace('{lang?}', '', Route::current()->uri());
 
         View::share('pgname', $pgname);
     }

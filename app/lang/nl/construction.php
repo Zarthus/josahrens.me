@@ -2,8 +2,8 @@
 
 return array(
 
-    'header-text' => 'Deze pagina is momenteel nog niet af.',
+    'header-text' => 'Deze pagina is momenteel niet toegankelijk.',
 
-    'under_construction' => 'Kom terug op een later tijdstip',
+    'under_construction' => 'Probeer het later opnieuw.',
 
 );
