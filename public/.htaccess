@@ -12,7 +12,7 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    
+    RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
+    RewriteRule ^(.*)$ https://josahrens.me/$1 [L]
 </IfModule>
-
-RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
-RewriteRule ^(.*)$ https://josahrens.me/$1 [L]
