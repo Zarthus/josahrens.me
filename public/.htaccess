@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
+    RewriteRule ^(.*)$ https://josahrens.me/$1 [L]
+    
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
@@ -12,7 +15,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-    
-    RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
-    RewriteRule ^(.*)$ https://josahrens.me/$1 [L]
 </IfModule>
