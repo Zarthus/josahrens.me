@@ -5,7 +5,7 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTP:CF-Visitor} !'"scheme":"http"'
+    RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
     RewriteRule ^(.*)$ https://josahrens.me/$1 [L]
     
     # Redirect Trailing Slashes...
