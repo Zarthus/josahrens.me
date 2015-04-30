@@ -1,6 +1,6 @@
 $(document).ready(function() {
     /* Reverse, and un-rot13 the email address */
-    var mail = 'zbp.yvnzt@nw+gfbuthho';
+    var mail = 'rz.fareunfbw@rz';
     mail = mail.split("").reverse().join("")
         .replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
 
